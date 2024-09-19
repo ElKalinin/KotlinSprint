@@ -6,10 +6,12 @@ fun main() {
 
     val crystals = 7
     val iron = 11
-    val buff = 0.2
+    var buff = 20f
+    val buffInPercentage: Float = buff / 100
 
-    val buffOfCrystals = (crystals * buff).roundToInt()
-    val buffOfIron = (iron * buff).roundToInt()
+
+    val buffOfCrystals = (crystals * buffInPercentage).roundToInt()
+    val buffOfIron = (iron * buffInPercentage).roundToInt()
 
     println(buffOfCrystals)
     println(buffOfIron)
