@@ -2,8 +2,7 @@ package org.example.lesson_3
 
 fun main() {
 
-    var number: Int
-    number = 6
+    var number: Int = 6
 
     val multiplicationTable = """
         $number x 1 = $number
