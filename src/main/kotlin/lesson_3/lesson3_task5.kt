@@ -3,9 +3,10 @@ package org.example.lesson_3
 fun main() {
 
     val serverLine = "D2-D4;0"
-    val numberFrom = "${serverLine.get(0)}${serverLine.get(1)}"
-    val numberTo = "${serverLine.get(3)}${serverLine.get(4)}"
-    val moveNumber =serverLine.get(6)
+    val parsingServerLine = serverLine.split("-", ";")
+    val numberFrom = parsingServerLine[0]
+    val numberTo = parsingServerLine[1]
+    val moveNumber = parsingServerLine[2]
 
     println(numberFrom)
     println(numberTo)
