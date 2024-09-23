@@ -21,5 +21,5 @@ fun main() {
 
     val winnerList = strongListOfValues.intersect(listOfValues)
     println(winnerList)
- println(winnerList.)
+ println(winnerList)
 }
