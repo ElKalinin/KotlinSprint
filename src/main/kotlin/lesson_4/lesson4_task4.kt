@@ -4,12 +4,15 @@ fun main() {
 
     var day = 5
     val dayParity = day % 2
+    val isEven = dayParity == 0
 
-    println("""
-        Упражнения для рук:    ${dayParity == 1}
-        Упражнения для ног:    ${dayParity == 0}
-        Упражнения для спины:  ${dayParity == 0}
-        Упражнения для пресса: ${dayParity == 1}
-    """.trimIndent())
+    println(
+        """
+        Упражнения для рук:    ${isEven != true}
+        Упражнения для ног:    ${isEven == true}
+        Упражнения для спины:  ${isEven == true}
+        Упражнения для пресса: ${isEven != true}
+    """.trimIndent()
+    )
 
 }
